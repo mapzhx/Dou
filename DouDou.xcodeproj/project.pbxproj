@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113D0A26BEEBF94A8C02FE7A /* Pods_DouDou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA63F5C49EF619B7C0F9D27 /* Pods_DouDou.framework */; };
+		3531D409241E4EF300D7D52E /* GenStringM.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB38241E2634004C7479 /* GenStringM.stencil */; };
+		3531D40A241E4EF300D7D52E /* GenStringSwift.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB3A241E2960004C7479 /* GenStringSwift.stencil */; };
+		3531D40E241E588D00D7D52E /* ProjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D40D241E588D00D7D52E /* ProjectLoader.swift */; };
+		354E0B66241E3648005B5675 /* GenStringH.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB37241E2634004C7479 /* GenStringH.stencil */; };
+		354E0B68241E36C1005B5675 /* String+Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E0B67241E36C1005B5675 /* String+Dou.swift */; };
+		3595CB24241D2B35004C7479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB23241D2B35004C7479 /* AppDelegate.swift */; };
+		3595CB26241D2B35004C7479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB25241D2B35004C7479 /* ViewController.swift */; };
+		3595CB28241D2B3A004C7479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB27241D2B3A004C7479 /* Assets.xcassets */; };
+		3595CB2B241D2B3A004C7479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB29241D2B3A004C7479 /* Main.storyboard */; };
+		3595CB36241DD40F004C7479 /* StringsExpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB35241DD40F004C7479 /* StringsExpress.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3531D40B241E566600D7D52E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3531D40C241E56BC00D7D52E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		3531D40D241E588D00D7D52E /* ProjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLoader.swift; sourceTree = "<group>"; };
+		354E0B67241E36C1005B5675 /* String+Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dou.swift"; sourceTree = "<group>"; };
+		3595CB20241D2B35004C7479 /* DouDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3595CB23241D2B35004C7479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3595CB25241D2B35004C7479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3595CB27241D2B3A004C7479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3595CB2C241D2B3A004C7479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3595CB2D241D2B3A004C7479 /* DouDou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DouDou.entitlements; sourceTree = "<group>"; };
+		3595CB35241DD40F004C7479 /* StringsExpress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsExpress.swift; sourceTree = "<group>"; };
+		3595CB37241E2634004C7479 /* GenStringH.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = GenStringH.stencil; sourceTree = "<group>"; };
+		3595CB38241E2634004C7479 /* GenStringM.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = GenStringM.stencil; sourceTree = "<group>"; };
+		3595CB3A241E2960004C7479 /* GenStringSwift.stencil */ = {isa = PBXFileReference; explicitFileType = text; path = GenStringSwift.stencil; sourceTree = "<group>"; };
+		3BA63F5C49EF619B7C0F9D27 /* Pods_DouDou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouDou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688A4306B85D6B93CB915D89 /* Pods-DouDou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouDou.release.xcconfig"; path = "Target Support Files/Pods-DouDou/Pods-DouDou.release.xcconfig"; sourceTree = "<group>"; };
+		FECF443595AC370C1EE1B3C1 /* Pods-DouDou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouDou.debug.xcconfig"; path = "Target Support Files/Pods-DouDou/Pods-DouDou.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3595CB1D241D2B35004C7479 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113D0A26BEEBF94A8C02FE7A /* Pods_DouDou.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C431AA2D8A448D68B28106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FECF443595AC370C1EE1B3C1 /* Pods-DouDou.debug.xcconfig */,
+				688A4306B85D6B93CB915D89 /* Pods-DouDou.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3595CB17241D2B35004C7479 = {
+			isa = PBXGroup;
+			children = (
+				3595CB22241D2B35004C7479 /* DouDou */,
+				3595CB21241D2B35004C7479 /* Products */,
+				13C431AA2D8A448D68B28106 /* Pods */,
+				C8D833C45DCE042FEE9928AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3595CB21241D2B35004C7479 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3595CB20241D2B35004C7479 /* DouDou.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3595CB22241D2B35004C7479 /* DouDou */ = {
+			isa = PBXGroup;
+			children = (
+				3595CB23241D2B35004C7479 /* AppDelegate.swift */,
+				3595CB25241D2B35004C7479 /* ViewController.swift */,
+				3595CB35241DD40F004C7479 /* StringsExpress.swift */,
+				3595CB27241D2B3A004C7479 /* Assets.xcassets */,
+				3595CB29241D2B3A004C7479 /* Main.storyboard */,
+				3595CB2C241D2B3A004C7479 /* Info.plist */,
+				3595CB2D241D2B3A004C7479 /* DouDou.entitlements */,
+				3595CB37241E2634004C7479 /* GenStringH.stencil */,
+				3595CB38241E2634004C7479 /* GenStringM.stencil */,
+				3595CB3A241E2960004C7479 /* GenStringSwift.stencil */,
+				354E0B67241E36C1005B5675 /* String+Dou.swift */,
+				3531D40D241E588D00D7D52E /* ProjectLoader.swift */,
+			);
+			path = DouDou;
+			sourceTree = "<group>";
+		};
+		C8D833C45DCE042FEE9928AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA63F5C49EF619B7C0F9D27 /* Pods_DouDou.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3595CB1F241D2B35004C7479 /* DouDou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3595CB30241D2B3A004C7479 /* Build configuration list for PBXNativeTarget "DouDou" */;
+			buildPhases = (
+				5450057E91A6E1791A115174 /* [CP] Check Pods Manifest.lock */,
+				3595CB1C241D2B35004C7479 /* Sources */,
+				3595CB1D241D2B35004C7479 /* Frameworks */,
+				3595CB1E241D2B35004C7479 /* Resources */,
+				B9784C2635C260E261BFEF30 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouDou;
+			productName = DouDou;
+			productReference = 3595CB20241D2B35004C7479 /* DouDou.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3595CB18241D2B35004C7479 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = mapengzhen;
+				TargetAttributes = {
+					3595CB1F241D2B35004C7479 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 3595CB1B241D2B35004C7479 /* Build configuration list for PBXProject "DouDou" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = 3595CB17241D2B35004C7479;
+			productRefGroup = 3595CB21241D2B35004C7479 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3595CB1F241D2B35004C7479 /* DouDou */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3595CB1E241D2B35004C7479 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3531D409241E4EF300D7D52E /* GenStringM.stencil in Resources */,
+				3531D40A241E4EF300D7D52E /* GenStringSwift.stencil in Resources */,
+				354E0B66241E3648005B5675 /* GenStringH.stencil in Resources */,
+				3595CB28241D2B3A004C7479 /* Assets.xcassets in Resources */,
+				3595CB2B241D2B3A004C7479 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5450057E91A6E1791A115174 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouDou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9784C2635C260E261BFEF30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DouDou/Pods-DouDou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DouDou/Pods-DouDou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DouDou/Pods-DouDou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3595CB1C241D2B35004C7479 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3531D40E241E588D00D7D52E /* ProjectLoader.swift in Sources */,
+				3595CB26241D2B35004C7479 /* ViewController.swift in Sources */,
+				354E0B68241E36C1005B5675 /* String+Dou.swift in Sources */,
+				3595CB24241D2B35004C7479 /* AppDelegate.swift in Sources */,
+				3595CB36241DD40F004C7479 /* StringsExpress.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3595CB29241D2B3A004C7479 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3531D40B241E566600D7D52E /* zh-Hans */,
+				3531D40C241E56BC00D7D52E /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3595CB2E241D2B3A004C7479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Dou;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3595CB2F241D2B3A004C7479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = Dou;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3595CB31241D2B3A004C7479 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECF443595AC370C1EE1B3C1 /* Pods-DouDou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DouDou/DouDou.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DouDou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = tal.DouDou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3595CB32241D2B3A004C7479 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 688A4306B85D6B93CB915D89 /* Pods-DouDou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DouDou/DouDou.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DouDou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = tal.DouDou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3595CB1B241D2B35004C7479 /* Build configuration list for PBXProject "DouDou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3595CB2E241D2B3A004C7479 /* Debug */,
+				3595CB2F241D2B3A004C7479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3595CB30241D2B3A004C7479 /* Build configuration list for PBXNativeTarget "DouDou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3595CB31241D2B3A004C7479 /* Debug */,
+				3595CB32241D2B3A004C7479 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3595CB18241D2B35004C7479 /* Project object */;
+}
