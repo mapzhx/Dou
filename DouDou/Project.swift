@@ -36,5 +36,24 @@ struct Project {
                 }
             }
         }
+        
+        makeMainModule(basePath: path + "Yach/Yach")
+    }
+    
+    /// 主项目里没有拆出来的组件
+    mutating func makeMainModule(basePath: Path) {
+        let mainModules = [
+            (name: "YachHelper", path: "YachHelper"),
+            (name: "YachSchedule", path: "YachSchedule"),
+            (name: "YachDependencies", path: "Dependencies"),
+            (name: "YachMainUIKit", path: "YACHUIKit"),
+            ]
+        
+        for m in mainModules {
+            var module = Module(name: m.name, path: basePath + m.path)
+            module.isFromMain = true
+            modules.append(module)
+        }
+
     }
 }

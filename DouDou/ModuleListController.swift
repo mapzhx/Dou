@@ -46,7 +46,7 @@ class ModuleListController: NSViewController, NSCollectionViewDataSource, NSColl
         }
         item?.module = modules[indexPath.item]
         item?.moduleView.localizeHandler = { [weak self] in
-            ProjectLoader.shared.gemLocalize(path: self?.modules[indexPath.item].path)
+            ProjectLoader.shared.makeLocalize(for: self?.modules[indexPath.item])
         }
         return item ?? ModuleViewItem(nibName: ModuleViewItemIdentifier, bundle: .main)
     }

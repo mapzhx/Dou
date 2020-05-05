@@ -38,21 +38,25 @@ public class ProjectLoader {
         }
     }
     
-    func gemLocalize(path: Path?) {
-        guard let path = path else {
+    func makeLocalize(for module: Module?) {
+        guard let module = module else {
+            return
+        }
+        
+        guard let path = module.path else {
             return
         }
         
         if !path.isReadable {
             FileSelector.open(dir: path.string, title: "点击确定") { [weak self] (_) in
-                self?.makeLocalizeFile(path: path)
+                self?.makeLocalizeFile(path: path, module: module)
             }
             return
         }
-        makeLocalizeFile(path: path)
+        makeLocalizeFile(path: path, module: module)
     }
     
-    func makeLocalizeFile(path: Path) {
+    func makeLocalizeFile(path: Path, module: Module) {
         if path.isFile, path.extension != "strings" {
             NSAlert.show(error: NSError(code: .typeError, message: "需要选择目录或者strings文件"), buttons: ["OK"], icon: NSImage(named: NSImage.networkName) ?? NSImage())
             return
@@ -81,6 +85,7 @@ public class ProjectLoader {
                 "placeholders": GenString.getStringExpresses(path: nextPath).placeholders,
                 "moduleName": moduleName,
                 "className": className,
+                "isFromMain": module.isFromMain,
             ]
             var parentDir = nextPath.parent()
             if parentDir.extension == "lproj" {

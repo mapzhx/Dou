@@ -7,7 +7,20 @@
 #import "{{ className }}.h"
 
 @implementation {{ className }}
+{% if isFromMain %}
 
++ (NSBundle *)bundle {
+    // Yach
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+
+    // Yach/{{ moduleName }}.bundle/
+    NSString *languagePath = [bundle pathForResource:[self languageName] ofType:@"lproj"];
+    if (!languagePath) {
+        return nil;
+    }
+    return [NSBundle bundleWithPath:languagePath];
+}
+{% endif %}
 {% for model in models %}
 /// hint: {{ model.hint }}
 + (NSString *){{ model.name }} {

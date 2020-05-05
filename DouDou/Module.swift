@@ -21,6 +21,13 @@ struct Module {
     /// 组件目录
     var path: Path?
     
+    var isFromMain = false
+    
+    init(name: String, path: Path) {
+        self.name = name
+        self.path = path
+    }
+    
     init(pod: String, basePath: Path) {
         if let nameResult = Module.moduleNameRegular?.firstMatch(in: pod, options: .reportCompletion, range: NSRange(location: 0, length: pod.count)) {
             var range = nameResult.range(at: 0)
