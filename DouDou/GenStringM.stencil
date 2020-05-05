@@ -8,24 +8,19 @@
 
 @implementation {{ className }}
 
-+ (NSBundle *)bundle {
-    // Yach
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-
-    // Yach/YachSchedule.bundle/
-    NSString *bundlePath = [bundle pathForResource:@"{{ moduleName }}" ofType:@"bundle"];
-    if (!bundlePath) {
-        return nil;
-    }
-    bundle = [NSBundle bundleWithPath:bundlePath];
-    return bundle;
-}
 {% for model in models %}
-
 /// hint: {{ model.hint }}
 + (NSString *){{ model.name }} {
-    return NSLocalizedStringFromTableInBundle(@"{{ model.name }}", @"{{ className }}", [self bundle], ) ?: @"";
+    return NSLocalizedStringFromTableInBundle(@"{{ model.name }}", @"{{ moduleName }}", [self bundle], ) ?: @"";
 }
-
 {% endfor %}
+
+{% for model in placeholders %}
+/// hint: {{ model.hint }}
++ (NSString *){{ model.name }}{% for p in model.placeHodlers %}{% if forloop.length == 1 %}:({{ p }})value{% elif forloop.first %}:({{ p }})value{{ forloop.counter }} {% elif forloop.last %}value{{ forloop.counter }}:({{ p }})value{{ forloop.counter }}{% else %}value{{ forloop.counter }}:({{ p }})value{{ forloop.counter }} {% endif %}{% endfor %} {
+    NSString *format = [[self class] localizedStringForKey:@"{{ model.name }}" table:@"{{ moduleName }}"];
+    return [[self class] localizedWithFormat:format, {% for p in model.placeHodlers %}{% if forloop.length == 1 %}value, nil{% elif forloop.first %}value{{ forloop.counter }}, {% elif forloop.last %}value{{ forloop.counter }}, nil{% else %}value{{ forloop.counter }}, {% endif %}{% endfor %}];
+}
+{% endfor %}
+
 @end

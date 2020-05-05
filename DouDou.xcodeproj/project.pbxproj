@@ -8,26 +8,99 @@
 
 /* Begin PBXBuildFile section */
 		113D0A26BEEBF94A8C02FE7A /* Pods_DouDou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA63F5C49EF619B7C0F9D27 /* Pods_DouDou.framework */; };
+		3512CB21246172AE00B9CD39 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB20246172AE00B9CD39 /* Helper.swift */; };
+		3512CB27246172B700B9CD39 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB22246172B700B9CD39 /* main.swift */; };
+		3512CB28246172B700B9CD39 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB23246172B700B9CD39 /* HelperAuthorizationRight.swift */; };
+		3512CB29246172B700B9CD39 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB24246172B700B9CD39 /* HelperAuthorization.swift */; };
+		3512CB2A246172B700B9CD39 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB25246172B700B9CD39 /* HelperConstants.swift */; };
+		3512CB2B246172B700B9CD39 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB26246172B700B9CD39 /* HelperProtocol.swift */; };
+		3512CB3A2461765C00B9CD39 /* DouAuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB392461765C00B9CD39 /* DouAuthHelper.swift */; };
+		3512CB3C2461771F00B9CD39 /* HelperAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB24246172B700B9CD39 /* HelperAuthorization.swift */; };
+		3512CB3D2461771F00B9CD39 /* HelperAuthorizationRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB23246172B700B9CD39 /* HelperAuthorizationRight.swift */; };
+		3512CB3E2461771F00B9CD39 /* HelperConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB25246172B700B9CD39 /* HelperConstants.swift */; };
+		3512CB3F2461771F00B9CD39 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB26246172B700B9CD39 /* HelperProtocol.swift */; };
+		3512CB402461771F00B9CD39 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB20246172AE00B9CD39 /* Helper.swift */; };
+		3512CB4424617AD300B9CD39 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB4224617AD300B9CD39 /* AppProtocol.swift */; };
+		3512CB4524617AD300B9CD39 /* CodesignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB4324617AD300B9CD39 /* CodesignCheck.swift */; };
+		3512CB4624617AF200B9CD39 /* AppProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB4224617AD300B9CD39 /* AppProtocol.swift */; };
+		3512CB4724617BE500B9CD39 /* CodesignCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512CB4324617AD300B9CD39 /* CodesignCheck.swift */; };
+		3512CB5124619FA600B9CD39 /* DouAuth in CopyFiles */ = {isa = PBXBuildFile; fileRef = 352ACAE82460700800C5F7F3 /* DouAuth */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		352ACAB3245FDB8600C5F7F3 /* FileAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352ACAB2245FDB8600C5F7F3 /* FileAuth.swift */; };
+		352ACAB5245FF34B00C5F7F3 /* ModuleViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352ACAB4245FF34B00C5F7F3 /* ModuleViewItem.swift */; };
 		3531D409241E4EF300D7D52E /* GenStringM.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB38241E2634004C7479 /* GenStringM.stencil */; };
 		3531D40A241E4EF300D7D52E /* GenStringSwift.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB3A241E2960004C7479 /* GenStringSwift.stencil */; };
 		3531D40E241E588D00D7D52E /* ProjectLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531D40D241E588D00D7D52E /* ProjectLoader.swift */; };
 		354E0B66241E3648005B5675 /* GenStringH.stencil in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB37241E2634004C7479 /* GenStringH.stencil */; };
 		354E0B68241E36C1005B5675 /* String+Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354E0B67241E36C1005B5675 /* String+Dou.swift */; };
 		3595CB24241D2B35004C7479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB23241D2B35004C7479 /* AppDelegate.swift */; };
-		3595CB26241D2B35004C7479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB25241D2B35004C7479 /* ViewController.swift */; };
 		3595CB28241D2B3A004C7479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB27241D2B3A004C7479 /* Assets.xcassets */; };
 		3595CB2B241D2B3A004C7479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3595CB29241D2B3A004C7479 /* Main.storyboard */; };
 		3595CB36241DD40F004C7479 /* StringsExpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595CB35241DD40F004C7479 /* StringsExpress.swift */; };
+		35A6582F243D9E1400BA17B5 /* FileSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6582E243D9E1400BA17B5 /* FileSelector.swift */; };
+		35A65831243DAE5400BA17B5 /* NSError+Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A65830243DAE5400BA17B5 /* NSError+Dou.swift */; };
+		35A65833243DAFD400BA17B5 /* NSAlert+Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A65832243DAFD400BA17B5 /* NSAlert+Dou.swift */; };
+		35A65835243DB47A00BA17B5 /* GenString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A65834243DB47A00BA17B5 /* GenString.swift */; };
+		35ADF56B245AB704002D14EB /* ModuleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADF569245AB704002D14EB /* ModuleListController.swift */; };
+		35ADF56C245AB704002D14EB /* ModuleViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35ADF56A245AB704002D14EB /* ModuleViewItem.xib */; };
+		35ADF570245AC21E002D14EB /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADF56F245AC21E002D14EB /* Module.swift */; };
+		35ADF572245AC230002D14EB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADF571245AC230002D14EB /* Project.swift */; };
+		35ADF576245ADCBB002D14EB /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ADF575245ADCBB002D14EB /* ModuleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3512CB5224619FAD00B9CD39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3595CB18241D2B35004C7479 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 352ACAE72460700800C5F7F3;
+			remoteInfo = DouAuth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3512CB4824618B8000B9CD39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				3512CB5124619FA600B9CD39 /* DouAuth in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352ACAE62460700800C5F7F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3512CB1E2461728900B9CD39 /* DouAuth-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DouAuth-Launchd.plist"; sourceTree = "<group>"; };
+		3512CB1F2461728900B9CD39 /* DouAuth-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DouAuth-Info.plist"; sourceTree = "<group>"; };
+		3512CB20246172AE00B9CD39 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		3512CB22246172B700B9CD39 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3512CB23246172B700B9CD39 /* HelperAuthorizationRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorizationRight.swift; sourceTree = "<group>"; };
+		3512CB24246172B700B9CD39 /* HelperAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperAuthorization.swift; sourceTree = "<group>"; };
+		3512CB25246172B700B9CD39 /* HelperConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperConstants.swift; sourceTree = "<group>"; };
+		3512CB26246172B700B9CD39 /* HelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		3512CB2F246173FF00B9CD39 /* CodeSignUpdate.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CodeSignUpdate.sh; sourceTree = "<group>"; };
+		3512CB392461765C00B9CD39 /* DouAuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouAuthHelper.swift; sourceTree = "<group>"; };
+		3512CB4224617AD300B9CD39 /* AppProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppProtocol.swift; sourceTree = "<group>"; };
+		3512CB4324617AD300B9CD39 /* CodesignCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodesignCheck.swift; sourceTree = "<group>"; };
+		352ACAB2245FDB8600C5F7F3 /* FileAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAuth.swift; sourceTree = "<group>"; };
+		352ACAB4245FF34B00C5F7F3 /* ModuleViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewItem.swift; sourceTree = "<group>"; };
+		352ACAE82460700800C5F7F3 /* DouAuth */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DouAuth; sourceTree = BUILT_PRODUCTS_DIR; };
 		3531D40B241E566600D7D52E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3531D40C241E56BC00D7D52E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		3531D40D241E588D00D7D52E /* ProjectLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectLoader.swift; sourceTree = "<group>"; };
 		354E0B67241E36C1005B5675 /* String+Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Dou.swift"; sourceTree = "<group>"; };
 		3595CB20241D2B35004C7479 /* DouDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595CB23241D2B35004C7479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3595CB25241D2B35004C7479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3595CB27241D2B3A004C7479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3595CB2C241D2B3A004C7479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3595CB2D241D2B3A004C7479 /* DouDou.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DouDou.entitlements; sourceTree = "<group>"; };
@@ -35,12 +108,28 @@
 		3595CB37241E2634004C7479 /* GenStringH.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = GenStringH.stencil; sourceTree = "<group>"; };
 		3595CB38241E2634004C7479 /* GenStringM.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = GenStringM.stencil; sourceTree = "<group>"; };
 		3595CB3A241E2960004C7479 /* GenStringSwift.stencil */ = {isa = PBXFileReference; explicitFileType = text; path = GenStringSwift.stencil; sourceTree = "<group>"; };
+		35A6582E243D9E1400BA17B5 /* FileSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSelector.swift; sourceTree = "<group>"; };
+		35A65830243DAE5400BA17B5 /* NSError+Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Dou.swift"; sourceTree = "<group>"; };
+		35A65832243DAFD400BA17B5 /* NSAlert+Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAlert+Dou.swift"; sourceTree = "<group>"; };
+		35A65834243DB47A00BA17B5 /* GenString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenString.swift; sourceTree = "<group>"; };
+		35ADF569245AB704002D14EB /* ModuleListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleListController.swift; sourceTree = "<group>"; };
+		35ADF56A245AB704002D14EB /* ModuleViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleViewItem.xib; sourceTree = "<group>"; };
+		35ADF56F245AC21E002D14EB /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		35ADF571245AC230002D14EB /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		35ADF575245ADCBB002D14EB /* ModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleView.swift; sourceTree = "<group>"; };
 		3BA63F5C49EF619B7C0F9D27 /* Pods_DouDou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouDou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		688A4306B85D6B93CB915D89 /* Pods-DouDou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouDou.release.xcconfig"; path = "Target Support Files/Pods-DouDou/Pods-DouDou.release.xcconfig"; sourceTree = "<group>"; };
 		FECF443595AC370C1EE1B3C1 /* Pods-DouDou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouDou.debug.xcconfig"; path = "Target Support Files/Pods-DouDou/Pods-DouDou.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		352ACAE52460700800C5F7F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3595CB1D241D2B35004C7479 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +150,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3512CB2E246173FF00B9CD39 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				3512CB2F246173FF00B9CD39 /* CodeSignUpdate.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		352ACAE92460700800C5F7F3 /* DouAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3512CB4224617AD300B9CD39 /* AppProtocol.swift */,
+				3512CB4324617AD300B9CD39 /* CodesignCheck.swift */,
+				3512CB24246172B700B9CD39 /* HelperAuthorization.swift */,
+				3512CB23246172B700B9CD39 /* HelperAuthorizationRight.swift */,
+				3512CB25246172B700B9CD39 /* HelperConstants.swift */,
+				3512CB26246172B700B9CD39 /* HelperProtocol.swift */,
+				3512CB22246172B700B9CD39 /* main.swift */,
+				3512CB20246172AE00B9CD39 /* Helper.swift */,
+				3512CB1F2461728900B9CD39 /* DouAuth-Info.plist */,
+				3512CB1E2461728900B9CD39 /* DouAuth-Launchd.plist */,
+			);
+			path = DouAuth;
+			sourceTree = "<group>";
+		};
 		3595CB17241D2B35004C7479 = {
 			isa = PBXGroup;
 			children = (
+				3512CB2E246173FF00B9CD39 /* Scripts */,
 				3595CB22241D2B35004C7479 /* DouDou */,
+				352ACAE92460700800C5F7F3 /* DouAuth */,
 				3595CB21241D2B35004C7479 /* Products */,
 				13C431AA2D8A448D68B28106 /* Pods */,
 				C8D833C45DCE042FEE9928AD /* Frameworks */,
@@ -75,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				3595CB20241D2B35004C7479 /* DouDou.app */,
+				352ACAE82460700800C5F7F3 /* DouAuth */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +200,12 @@
 			isa = PBXGroup;
 			children = (
 				3595CB23241D2B35004C7479 /* AppDelegate.swift */,
-				3595CB25241D2B35004C7479 /* ViewController.swift */,
+				35ADF56F245AC21E002D14EB /* Module.swift */,
+				35ADF571245AC230002D14EB /* Project.swift */,
+				35ADF575245ADCBB002D14EB /* ModuleView.swift */,
+				35ADF569245AB704002D14EB /* ModuleListController.swift */,
+				352ACAB4245FF34B00C5F7F3 /* ModuleViewItem.swift */,
+				35ADF56A245AB704002D14EB /* ModuleViewItem.xib */,
 				3595CB35241DD40F004C7479 /* StringsExpress.swift */,
 				3595CB27241D2B3A004C7479 /* Assets.xcassets */,
 				3595CB29241D2B3A004C7479 /* Main.storyboard */,
@@ -93,7 +215,13 @@
 				3595CB38241E2634004C7479 /* GenStringM.stencil */,
 				3595CB3A241E2960004C7479 /* GenStringSwift.stencil */,
 				354E0B67241E36C1005B5675 /* String+Dou.swift */,
+				35A65830243DAE5400BA17B5 /* NSError+Dou.swift */,
+				35A65832243DAFD400BA17B5 /* NSAlert+Dou.swift */,
+				35A6582E243D9E1400BA17B5 /* FileSelector.swift */,
+				35A65834243DB47A00BA17B5 /* GenString.swift */,
 				3531D40D241E588D00D7D52E /* ProjectLoader.swift */,
+				3512CB392461765C00B9CD39 /* DouAuthHelper.swift */,
+				352ACAB2245FDB8600C5F7F3 /* FileAuth.swift */,
 			);
 			path = DouDou;
 			sourceTree = "<group>";
@@ -109,6 +237,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		352ACAE72460700800C5F7F3 /* DouAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352ACAEC2460700800C5F7F3 /* Build configuration list for PBXNativeTarget "DouAuth" */;
+			buildPhases = (
+				352ACAE42460700800C5F7F3 /* Sources */,
+				352ACAE52460700800C5F7F3 /* Frameworks */,
+				352ACAE62460700800C5F7F3 /* CopyFiles */,
+				3512CB4C2461964A00B9CD39 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouAuth;
+			productName = DouAuth;
+			productReference = 352ACAE82460700800C5F7F3 /* DouAuth */;
+			productType = "com.apple.product-type.tool";
+		};
 		3595CB1F241D2B35004C7479 /* DouDou */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3595CB30241D2B3A004C7479 /* Build configuration list for PBXNativeTarget "DouDou" */;
@@ -118,10 +264,13 @@
 				3595CB1D241D2B35004C7479 /* Frameworks */,
 				3595CB1E241D2B35004C7479 /* Resources */,
 				B9784C2635C260E261BFEF30 /* [CP] Embed Pods Frameworks */,
+				3512CB4824618B8000B9CD39 /* CopyFiles */,
+				3512CB4A24618C4E00B9CD39 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3512CB5324619FAD00B9CD39 /* PBXTargetDependency */,
 			);
 			name = DouDou;
 			productName = DouDou;
@@ -134,10 +283,14 @@
 		3595CB18241D2B35004C7479 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = mapengzhen;
 				TargetAttributes = {
+					352ACAE72460700800C5F7F3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
 					3595CB1F241D2B35004C7479 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -158,6 +311,7 @@
 			projectRoot = "";
 			targets = (
 				3595CB1F241D2B35004C7479 /* DouDou */,
+				352ACAE72460700800C5F7F3 /* DouAuth */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +324,7 @@
 				3531D409241E4EF300D7D52E /* GenStringM.stencil in Resources */,
 				3531D40A241E4EF300D7D52E /* GenStringSwift.stencil in Resources */,
 				354E0B66241E3648005B5675 /* GenStringH.stencil in Resources */,
+				35ADF56C245AB704002D14EB /* ModuleViewItem.xib in Resources */,
 				3595CB28241D2B3A004C7479 /* Assets.xcassets in Resources */,
 				3595CB2B241D2B3A004C7479 /* Main.storyboard in Resources */,
 			);
@@ -178,6 +333,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3512CB4A24618C4E00B9CD39 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\"${SRCROOT}\"/Scripts/CodeSignUpdate.sh\n";
+		};
+		3512CB4C2461964A00B9CD39 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\"${SRCROOT}\"/Scripts/CodeSignUpdate.sh\n\n";
+		};
 		5450057E91A6E1791A115174 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,19 +409,59 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		352ACAE42460700800C5F7F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3512CB4524617AD300B9CD39 /* CodesignCheck.swift in Sources */,
+				3512CB2A246172B700B9CD39 /* HelperConstants.swift in Sources */,
+				3512CB28246172B700B9CD39 /* HelperAuthorizationRight.swift in Sources */,
+				3512CB29246172B700B9CD39 /* HelperAuthorization.swift in Sources */,
+				3512CB4424617AD300B9CD39 /* AppProtocol.swift in Sources */,
+				3512CB27246172B700B9CD39 /* main.swift in Sources */,
+				3512CB21246172AE00B9CD39 /* Helper.swift in Sources */,
+				3512CB2B246172B700B9CD39 /* HelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3595CB1C241D2B35004C7479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3512CB4724617BE500B9CD39 /* CodesignCheck.swift in Sources */,
+				3512CB4624617AF200B9CD39 /* AppProtocol.swift in Sources */,
+				3512CB3C2461771F00B9CD39 /* HelperAuthorization.swift in Sources */,
+				3512CB3D2461771F00B9CD39 /* HelperAuthorizationRight.swift in Sources */,
+				3512CB3E2461771F00B9CD39 /* HelperConstants.swift in Sources */,
+				3512CB3F2461771F00B9CD39 /* HelperProtocol.swift in Sources */,
+				3512CB402461771F00B9CD39 /* Helper.swift in Sources */,
+				35ADF576245ADCBB002D14EB /* ModuleView.swift in Sources */,
+				35A65833243DAFD400BA17B5 /* NSAlert+Dou.swift in Sources */,
 				3531D40E241E588D00D7D52E /* ProjectLoader.swift in Sources */,
-				3595CB26241D2B35004C7479 /* ViewController.swift in Sources */,
+				35A65831243DAE5400BA17B5 /* NSError+Dou.swift in Sources */,
 				354E0B68241E36C1005B5675 /* String+Dou.swift in Sources */,
+				35ADF570245AC21E002D14EB /* Module.swift in Sources */,
 				3595CB24241D2B35004C7479 /* AppDelegate.swift in Sources */,
+				35A65835243DB47A00BA17B5 /* GenString.swift in Sources */,
+				35A6582F243D9E1400BA17B5 /* FileSelector.swift in Sources */,
+				352ACAB5245FF34B00C5F7F3 /* ModuleViewItem.swift in Sources */,
 				3595CB36241DD40F004C7479 /* StringsExpress.swift in Sources */,
+				3512CB3A2461765C00B9CD39 /* DouAuthHelper.swift in Sources */,
+				352ACAB3245FDB8600C5F7F3 /* FileAuth.swift in Sources */,
+				35ADF56B245AB704002D14EB /* ModuleListController.swift in Sources */,
+				35ADF572245AC230002D14EB /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3512CB5324619FAD00B9CD39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 352ACAE72460700800C5F7F3 /* DouAuth */;
+			targetProxy = 3512CB5224619FAD00B9CD39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3595CB29241D2B3A004C7479 /* Main.storyboard */ = {
@@ -247,6 +476,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		352ACAED2460700800C5F7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/DouAuth/DouAuth-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"DouAuth/DouAuth-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"DouAuth/DouAuth-Launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.yach.dou.auth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		352ACAEE2460700800C5F7F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB68P87Y8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/DouAuth/DouAuth-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"DouAuth/DouAuth-Info.plist",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"DouAuth/DouAuth-Launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.yach.dou.auth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		3595CB2E241D2B3A004C7479 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -298,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -354,7 +652,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = Dou;
@@ -371,8 +669,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DouDou/DouDou.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QB68P87Y8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DouDou/Info.plist;
@@ -380,9 +680,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = tal.DouDou;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.yach.dou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -395,8 +697,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DouDou/DouDou.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QB68P87Y8Z;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = DouDou/Info.plist;
@@ -404,9 +708,11 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = tal.DouDou;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tal.yach.dou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -414,6 +720,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		352ACAEC2460700800C5F7F3 /* Build configuration list for PBXNativeTarget "DouAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352ACAED2460700800C5F7F3 /* Debug */,
+				352ACAEE2460700800C5F7F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3595CB1B241D2B35004C7479 /* Build configuration list for PBXProject "DouDou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
